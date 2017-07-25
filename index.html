@@ -1,44 +1,25 @@
 ---
 layout: default
 ---
-
 <section>
   <div class="jumbotron">
     <div class="container">
-      {{site.description}}
-
-    </div>
-
-</div>
-</section>
-
-<section id="page-content">
-  <div class="container">
-    <div class="post-list">
-  {%  for post in site.posts %}
-  <div class="post-box">
-    <div class="post-title">
-    <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
-    </div>
-    <div class="post-excerpt">
-      {{ post.content | strip_html | truncatewords:20}}
-    </div>
-    <div class="posted">
-      posted on
-      <span class="posted-on">
-
-        {{ post.date | date: "%A, %B %-d, %Y" }}
-      </span>
-      <span class="in">
-        in
-      </span>
-      <span class="categories-on">
-        {% for category in post.categories%}
-        {{category}} &nbsp;{% if forloop.last %}{% else %},{% endif %}
-        {% endfor %}
-      </span>
+		<h1>Hermit Engine</h1>
+		<h3>Sometimes you need to build it yourself</h3>
     </div>
   </div>
-  {% endfor %}
+</section>
+<section id="page-content">
+  <div class="post-content container">
+	  <p>If you want to build a game, use an existing engine. Unity is there if you are an indie designer and want to cobble
+	  something together. Unreal is there if you have a full team, complete with legions of artists to churn out content for
+	  you. What about the solo programmer? Are we forever relegated to 8-bit physics games?</p>
+
+	  <p>That is the goal of Hermit Engine. Provide a means for programmers to create beautiful worlds out of algorithms as
+	  opposed to laborious pixel pushing. This is data-oriented programming brought to the extreme, where we never want to
+	  create one asset but whole families of them.</p>
+
+	  <p>In the course of development, the following utility libraries have been spawned:</p>
+	  <img src="images/GitHub-Mark-Light-32px.png" /> <a href="https://github.com/HermitEngine/egspload">egspload</a>
   </div>
 </section>

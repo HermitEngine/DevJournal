@@ -68,13 +68,14 @@ a:hover {
   padding-bottom: 0.3em; }
 
 .post-title-main {
-  text-align: center;
   color: #abc0ca !important; }
 
 .post-content {
-  font-size: 19px;
-  text-align: justify;
+  font-size: 18px;
+  text-align: left;
   padding-bottom: 5em; }
+  .post-content p {
+    padding-bottom: 1em; }
 
 pre {
   background-color: black !important;
